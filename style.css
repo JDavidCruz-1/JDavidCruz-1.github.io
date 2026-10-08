@@ -1,0 +1,93 @@
+:root {
+    --bg-main: #fcfbf9;
+    --bg-card: #ffffff;
+    --text-dark: #2d3748;
+    --text-muted: #64748b;
+    --accent-soft: #475569;
+    --accent-light: #e2e8f0;
+    --border-subtle: #f1f5f9;
+    --badge-bg: #f1f5f9;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Tarjetas con estilo sobrio y suave */
+.card-simple {
+    background-color: var(--bg-card);
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-simple:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Foto de perfil limpia */
+.avatar-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+        /* Insignias minimalistas */
+        .badge-soft {
+            background-color: var(--badge-bg);
+            color: #475569;
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Botones en tonos neutros */
+        .btn-simple-dark {
+            background-color: #334155;
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 9px 20px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-simple-dark:hover {
+            background-color: #1e293b;
+            color: #ffffff;
+        }
+
+        .btn-simple-outline {
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            border-radius: 8px;
+            padding: 9px 20px;
+            font-weight: 500;
+            background-color: #ffffff;
+            transition: all 0.2s ease;
+        }
+
+        .btn-simple-outline:hover {
+            background-color: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        /* Enlaces del menú */
+        .nav-link {
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #0f172a;
+        }
